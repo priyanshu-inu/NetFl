@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", "sans-serif";
+}
+
+.form-wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.756);
+  /* color: white; */
+  padding: 60px;
+  border-radius: 5px;
+  width: 440px;
+  /* color: #fff; */
+}
+
+.form-wrap h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.form-wrap form {
+  margin: 25px 0 65px;
+}
+
+.form-wrap .form-control {
+  height: 50px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.form-control input {
+  height: 100%;
+  color: #fff;
+  width: 100%;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  padding: 0 20px;
+}
+
+.form-control label {
+  position: absolute;
+  left: 20px;
+  color: #8c8c8c;
+  transform: translateY(-50%);
+  top: 50%;
+  transition: all 0.2s ease;
+}
+
+.form-control input:is(:focus, :valid) ~ label {
+  font-size: 0.78rem;
+  transform: translateY(-130%);
+}
+
+.form-wrap button {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 1rem;
+  background-color: #e50915;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.1s ease;
+}
+
+.form-wrap :where(label, p, a, small) {
+  color: #b3b3b3;
+}
+
+.form-wrap button:hover {
+  background-color: #c40812;
+}
+
+.help {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.help :where(label, a) {
+  font-size: 0.9rem;
+}
+
+.help .remember {
+  accent-color: #333;
+  display: flex;
+}
+
+.form-wrap p a {
+  color: #fff;
+}
+
+/* .form-wrap small {
+  display: block;
+  margin: 15px;
+} */
+
+.form-wrap small a {
+  color: #0273eb;
+}
+
+.form-wrap a:hover {
+  text-decoration: underline;
+}

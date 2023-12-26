@@ -1,0 +1,13 @@
+@media (max-width: 740px) {
+  body::before {
+    display: none;
+  }
+  .form-wrap {
+    padding: 20px;
+    top: 45%;
+    width: 100%;
+  }
+  form {
+    margin: 25px 0 40px;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix - Login</title>
+    <link rel="shortcut icon" href="netflix favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section
+      class="w-[100%] h-[100vh] bg-[url('./image/background.png')] bg-center bg-cover"
+    >
+      <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.7)]">
+        <header class="max-w-[1170px] mx-auto">
+          <div
+            class="grid sm:grid-cols-2 grid-cols-[30%_auto] sm:px-[55px] px-[10px] sm:py-[20px] py-[10px] items-center"
+          >
+            <figure>
+              <img src="./image/logo.png" class="w-[150px]" alt="logo" />
+            </figure>
+          </div>
+        </header>
+        <div class="form-wrap">
+          <h2>Sign In</h2>
+          <form action="#">
+            <div class="form-control">
+              <input type="text" required />
+              <label for="text">E-mail or phone number</label>
+            </div>
+            <div class="form-control">
+              <input type="password" required />
+              <label for="password">Password</label>
+            </div>
+            <button type="submit">Sign In</button>
+            <div class="help">
+              <div class="remember">
+                <input type="checkbox" name="" id="remember-me" />
+                <label for="remember-me">Remember me</label>
+              </div>
+              <a href="#">Need help?</a>
+            </div>
+          </form>
+          <p>New to Netflix? &nbsp; <a href="#">Sign up now</a></p>
+          <small>
+            This page is protected by google reCAPTCHA to ensure you're
+            <a href="#">Learn more.</a>
+          </small>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
